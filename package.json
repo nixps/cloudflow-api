@@ -1,0 +1,34 @@
+{
+  "name": "cloudflow-api",
+  "version": "1.0.0",
+  "description": "A wrapper for the Cloudflow API in node.js",
+  "main": "lib/cloudflow-api.js",
+  "scripts": {
+    "lint": "eslint \"**/*.js\"",
+    "mocha": "mocha test/ --recursive -t 10000 -S -R spec --require intelli-espower-loader",
+    "cover": "nyc --cache mocha test/ --recursive -t 10000 -S -R spec --require intelli-espower-loader && nyc report --reporter=html",
+    "test": "npm run lint && npm run cover"
+  },
+  "author": "Hybrid Software",
+  "license": "MPL-2.0",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "request": "^2.79.0",
+    "sync-request": "^4.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^3.16.0",
+    "ink-docstrap": "1.3.0",
+    "intelli-espower-loader": "1.0.1",
+    "js-beautify": "1.6.7",
+    "jsdoc": "3.4.3",
+    "minimist": "1.2.0",
+    "mkdirp": "0.5.1",
+    "mocha": "3.2.0",
+    "nock": "8.1.0",
+    "nyc": "10.0.0",
+    "power-assert": "1.4.2",
+    "rimraf": "2.5.4",
+    "swig": "1.4.2"
+  }
+}
