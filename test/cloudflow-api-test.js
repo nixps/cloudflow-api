@@ -13,14 +13,13 @@
 
 var assert = require('power-assert');
 var nock = require('nock');
-var fs = require('fs');
-var getCloudflowAPI = require('../');
+var cloudflowAPI = require('../');
 
 describe('Cloudflow API', function () {
     var api;
 
     before(function() {
-        api = getCloudflowAPI('http://localhost:9090', false, fs.readFileSync(__dirname + '/fixtures/api.js.stub', 'utf8').toString('utf8'));
+        api = cloudflowAPI.getAsyncAPI('http://localhost:9090');
     });
 
     it('it should return the current user', function(done) {
