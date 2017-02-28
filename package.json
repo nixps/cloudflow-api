@@ -1,6 +1,6 @@
 {
   "name": "cloudflow-api",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "A wrapper for the Cloudflow API in node.js",
   "main": "lib/cloudflow-api.js",
   "scripts": {
