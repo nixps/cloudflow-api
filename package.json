@@ -1,6 +1,6 @@
 {
   "name": "cloudflow-api",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A wrapper for the Cloudflow API in node.js",
   "main": "lib/cloudflow-api.js",
   "scripts": {
@@ -32,7 +32,7 @@
     "swig": "1.4.2"
   },
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/nixps/cloudflow-api.git"
+    "type": "git",
+    "url": "https://github.com/nixps/cloudflow-api.git"
   }
 }
